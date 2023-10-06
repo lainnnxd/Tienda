@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title> TechShop </title> <!-- nombre de pestaña -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <header class="header">
+
+            <nav>
+
+                <a href="index.html">Home </a>  <!--a href son botones -->
+                <a href="Ejemplo2.html">Ejemplo2 </a>
+                <a href="Ejemplo3.html">Ejemplo3 </a>
+                <a href="Ejemplo4.html">Ejemplo4 </a>
+                <a href="Ejemplo5.html">Ejemplo5 </a>
+                <a href="Ejemplo5.html">Ejemplo6 </a>
+                <a href="Ejemplo5.html">Ejemplo7 </a>
+                <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+
+
+            </nav>
+
+            <hr>
+
+        </header>
+
+        <aside class="aside">
+
+
+            <h2 class="noticia">Uso de Formularios</h2> <!-- con esta class se pone un audio referente a una noticia -->
+            <p>Informacion de noticia en Formulario</p>
+
+        </aside>
+
+
+        <section class="section">
+
+
+            <article>
+
+                <header>
+                    <h2>Solicitud de Informacion</h2>
+                    
+                </header>
+
+                <form action="cliente/registro">
+                    <table border="0" cellspacing="5" cellpadding="5">
+                       
+                        <tbody>
+                            <tr>
+                                <td>Usuario</td>
+                                <td><input type="email" name="usuario" placeholder="Escriba su correo electronico" size="25"/></td>
+                            </tr>
+                            <tr>
+                                <td>Clave</td>
+                                <td><input type="password" name="clave"  size="10"/></td>
+                            </tr>
+                            <tr>
+                                <td>Nombre</td>
+                                <td><input type="text" name="nombre" size="10"/></td>
+                            </tr>
+                            <tr>
+                                <td>Color favorito</td>
+                                <td><input type="color" name="color" placeholder="Escriba su color favorito" size="10"/></td>
+                            </tr>
+                            <tr>
+                                <td>Su foto</td>
+                                <td><input type="file" name="foto" accept="image/*"/></td> <!-- asterisco para cualquier formato de imagen -->
+                            </tr>
+                            <tr>
+                                <td>Telefono</td>
+                                <td><input type="tel" name="telefono"  size="8"/></td>
+                            </tr>
+                            <tr>
+                                <td>Rango salarial</td>
+                                <td><input type="number" name="salario"  min="400" max="10000"/></td>
+                            </tr>
+                            <tr>
+                                <td>Nivel de satisfaccion</td>
+                                <td>Minimo 0<input type="range" min="0" max="10"/>10 maximo</td>
+                            </tr>
+                           
+                                <td>Direccion exacta</td>
+                                <td><textarea name="direccion" rows="4" cols="40"/></textarea></td>
+                            
+                            <tr>
+                                <td>Nivel educativo</td>
+                                <td>
+                                    <select name="nivel" size="6">
+                                        <option value="0"> Primaria incompleta </option>
+                                        <option value="1"> Primaria completa</option>
+                                        <option value="2"> Secundaria incompleta</option>
+                                        <option value="3"> Secundaria completa</option>
+                                        <option value="4"> Universidad completa</option>
+                                        <option value="5"> Universidad incompleta</option>  
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>Acciones</td> 
+                                <td><input type="reset" value="Limpiar"/>
+                                    <input type="submit" value="Enviar"/>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                    </table>
+
+                </form>
+            </article>
+
+
+        </section>
+
+        <footer class="footer">
+            <p>Derechos Reservados por TechShop &COPY; 2023</p>
+        </footer>
+
+    </body>
+</html>
